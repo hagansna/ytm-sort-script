@@ -88,7 +88,7 @@ if (cookieIndex > -1) {
     cookieStr = process.argv[cookieIndex + 1];
 }
 
-const playlistName = playlistNameArg || "Megs' Ultimate Playlist";
+const playlistName = playlistNameArg || process.env.YTM_PLAYLIST || "Playlist";
 const cookie = cookieStr || process.env.YTM_COOKIE || null;
 
 main(playlistName, cookie);
