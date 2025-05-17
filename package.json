@@ -1,10 +1,11 @@
 {
-  "name": "ytmusic-node",
+  "name": "ytm-sort-script",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc main.ts --target es6 --module commonjs",
+    "run-main": "node --env-file=.env main.js"
   },
   "keywords": [],
   "author": "",
